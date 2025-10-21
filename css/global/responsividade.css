@@ -1,0 +1,10 @@
+@media (max-width: 656px){
+  img.foto {
+    border: solid #85DBF2 8px;
+    border-radius: 4px;
+    width: -webkit-fill-available;
+}
+}
+h1{
+  font-size: 2.725rem;
+}
