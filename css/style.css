@@ -147,7 +147,10 @@ a.nav-link:focus{
 /*==========SOBRE========*/
 img.foto {
   border: solid #85DBF2 8px;
-  border-radius: 4px;
+  border-radius: 50%;
+}
+a.az-03.m-1 {
+    font-size: 32px;
 }
 /*==========ITENS========*/
 .drop::before {
@@ -277,13 +280,37 @@ img.foto {
     display: none;
 }
 /*========================RESPONSIVIDADE========================*/
-@media (max-width: 656px){
+@media (max-width: 656px){  
+  .sobre.row.col-md-12 {
+    flex-direction: column-reverse;
+}
   img.foto {
     border: solid #85DBF2 8px;
-    border-radius: 4px;
-    width: -webkit-fill-available;
+    border-radius: 50%;
+    width: 70%;
+    margin: 10px;
 }
+.perfil.col-md-5.p-2.mt-5 {
+    text-align: center;
+}
+.sociais.row.text-center.p-5 {
+    align-content: center;
+  }
+  .perfil-texto.col-md-7.mb-5 {
+    margin-top: 50px;
+    margin-left: 10px;
 }
 h1{
   font-size: 2.725rem;
+}
+h5.az-03 {
+    margin-bottom: -40px;
+}
+.row.az-05 {
+    margin-right: 10px;
+}
+.container-fluid.tecnologias {
+    margin-left: 30px;
+}
+
 }
