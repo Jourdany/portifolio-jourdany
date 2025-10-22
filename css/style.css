@@ -1,0 +1,172 @@
+/*=========RESET GLOBAL========*/
+body{
+  background-color: #053C69;
+  margin: 0;  
+}
+ul{
+  list-style: none;
+}
+li {
+    border-bottom: dashed #053c6911 2px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+/*=======================TIPOGRAFIA=====================*/
+h1{
+  font-family: "Rubik Mono One", monospace;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 3rem;  
+  
+}
+h2{
+  font-family: "Lato", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+  font-size: 2.75rem;  
+}
+h3{
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+  font-size: 1.5rem;  
+}
+h4{
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+  font-size: 1.125rem;  
+}
+h5{
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 0.75rem;  
+}
+h6{
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+  font-size: 0.75rem;  
+}
+p{
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-style: normal;  
+  font-size: 1.125rem;
+}
+pre, code{
+  font-family: "Space Mono", monospace;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 0.875rem;
+}
+code{
+  color: #053B69;
+  background-color: #becbd6;
+  padding: 4px;
+  border: solid #778a99 1px;
+}
+/*==========BACKGROUNDS========*/
+.bg-cz{
+  background-color: #cde4eb;
+}
+.bg-grey{
+  background-color: #b0c4d6;
+}
+.bg-db{
+  background-color: #022e52;
+}
+.bg-dbk{
+  background-color: #081520;
+}
+/*==========TONS DE AZUL========*/
+.az-01{
+  color: #85DBF2;
+}
+.az-02{
+  color: #80D7D8;
+}
+.az-03{
+  color: #509bd1;
+}
+.az-04{
+  color: #246a99;
+}
+.az-05{
+  color: #063E6C;
+}
+.az-06{
+  color: #022e52;
+}
+/*==========TONS DE CINZA========*/
+.cz-00{
+  color: #e1f9ff;
+}
+.cz-01{
+  color: #FEFEFF;
+}
+.cz-02{
+  color: #EDF0F3;
+}
+.cz-03{
+  color: #D7DDE3;
+}
+.cz-04{
+  color: #73808B;
+}
+.cz-05{
+  color: #616c75;
+}
+
+/*=========MENU========*/
+a.nav-link{
+  color: #60BACB;
+}
+a.nav-link:hover{
+  color: #16888a;
+}
+a.nav-link:active{
+  color: #81D7D9;
+  font-weight: 600;
+}
+a.nav-link:focus{
+  color: #81D7D9;
+  font-weight: 600;
+}
+.bg-menu-toggle{
+  border: solid #6ab8b8 1px;
+  background-color: #326b99;
+}
+.navbar-toggler:hover{
+  border: solid #6ab8b8 2px;
+}
+.navbar-toggler:active{
+  border: solid #6ab8b8 2px;  
+}
+/*==========SOBRE========*/
+img.foto {
+  border: solid #85DBF2 8px;
+  border-radius: 4px;
+}
+/*==========ITENS========*/
+.drop::before {
+  content: ""; /* Essencial para que o pseudo-elemento exista */
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  background: radial-gradient(#a9e0f0, #63b9ca);
+  border-radius: 50%; /* Transforma o quadrado em círculo */
+  margin-right: 10px;
+}
+/*========================RESPONSIVIDADE========================*/
+@media (max-width: 656px){
+  img.foto {
+    border: solid #85DBF2 8px;
+    border-radius: 4px;
+    width: -webkit-fill-available;
+}
+}
+h1{
+  font-size: 2.725rem;
+}
