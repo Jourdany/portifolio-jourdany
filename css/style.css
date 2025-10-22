@@ -80,6 +80,22 @@ code{
 .bg-dbk{
   background-color: #081520;
 }
+.bg-img{
+  background-image: url('../img/bg/bg.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 400px;
+  padding: 20px;
+}
+.bg-blur{
+    background-image: url('../img/bg/bg1.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 400px;
+  padding: 20px;
+}
 /*==========TONS DE AZUL========*/
 .az-01{
   color: #85DBF2;
@@ -118,6 +134,9 @@ code{
 .cz-05{
   color: #616c75;
 }
+.txt-shadow{
+  text-shadow: 0px 1px 2px #020c2cd2;
+}
 
 /*=========MENU========*/
 a.nav-link{
@@ -144,12 +163,13 @@ a.nav-link:focus{
 .navbar-toggler:active{
   border: solid #6ab8b8 2px;  
 }
+
 /*==========SOBRE========*/
 img.foto {
   border: solid #85DBF2 8px;
   border-radius: 50%;
 }
-a.az-03.m-1 {
+a.az-01.m-1 {
     font-size: 32px;
 }
 /*==========ITENS========*/
@@ -166,11 +186,11 @@ a.az-03.m-1 {
 /* Slider */
 
 .slick-slide {
-    margin: 0px 10px;
+    margin: 0px 0px 15px 0px;
 }
 
 .slick-slide img {
-    width: 20%;
+    height: 100%;
 }
 
 .slick-slider
@@ -280,6 +300,11 @@ a.az-03.m-1 {
     display: none;
 }
 /*========================RESPONSIVIDADE========================*/
+@media (max-width: 1000px){
+  img.foto {
+    width: 80%;
+}
+}
 @media (max-width: 656px){  
   .sobre.row.col-md-12 {
     flex-direction: column-reverse;
