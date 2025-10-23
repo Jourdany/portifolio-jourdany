@@ -18,7 +18,7 @@
 
 <body>
   <header class="container-fluid text-center bg-db fixed-top">
-    <nav class="navbar navbar-expand-lg navbar-dark">
+    <nav class="navbar navbar-expand-lg navbar-dark ">
       <div class="container-fluid">
         <a class="navbar-brand  fw-bolder" href="index.html"><img src="img/logo/logo.png" width="70px" alt="Logotipo do site com a letra “J” estilizada, incorporando elementos visuais que remetem à tecnologia."></a>
         <button class="navbar-toggler bg-menu-toggle" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -139,22 +139,28 @@
                 <a class="nav-item nav-link" id="nav-sebrae-tab" data-toggle="tab" href="#nav-sebrae" role="tab" aria-controls="nav-sebrae" aria-selected="false">Sebrae</a>
                 <a class="nav-item nav-link" id="nav-ses-tab" data-toggle="tab" href="#nav-ses" role="tab" aria-controls="nav-ses" aria-selected="false">SES/SC</a>
                 <a class="nav-item nav-link" id="nav-ilha-tab" data-toggle="tab" href="#nav-ilha" role="tab" aria-controls="nav-ilha" aria-selected="false">Ilha Service</a>
-
-
               </div>
             </nav>
             <div class="tab-content py-3 px-3 px-sm-0" id="nav-tabContent">
-              <div class="tab-pane fade show active p-5" id="nav-dio" role="tabpanel" aria-labelledby="nav-dio-tab">
-                <ul>
-                  <li><i class="bi bi-caret-right"></i> Introdução ao Ecossistema e Documentação PHP <span class="az-04">- 2 horas </span></li>
-                  <li><i class="bi bi-caret-right"></i> Introdução ao PHP <span class="az-04">- 4 horas </span></li>
-                  <li><i class="bi bi-caret-right"></i> Estrutura de Dados e Algoritmos <span class="az-04">- 2 horas </span></li>
-                  <li><i class="bi bi-caret-right"></i> Arquitetura de Dados Essencial <span class="az-04">- 2 horas </span></li>
-                  <li><i class="bi bi-caret-right"></i> Introdução à Programação e Pensamento Computacional <span class="az-04">- 5 horas </span></li>
-                  <li><i class="bi bi-caret-right"></i> Formação Lógica de Programação <span class="az-04">- 41 horas </span></li>
-                  <li><i class="bi bi-caret-right"></i> Formação de UX Designer <span class="az-04">- 30 horas </span></li>
-                  <li><i class="bi bi-caret-right"></i> Formação HTML Web Developer <span class="az-04">- 21 horas </span></li>
-                </ul>
+              <div class="tab-pane fade show active p-3" id="nav-dio" role="tabpanel" aria-labelledby="nav-dio-tab">
+                <div class="row">
+                  <div class="col-md-6">
+                    <ul>
+                      <li><i class="bi bi-caret-right"></i> Arquitetura de Dados Essencial <span class="az-04">- 2 horas </span></li>
+                      <li><i class="bi bi-caret-right"></i> Estrutura de Dados e Algoritmos <span class="az-04">- 2 horas </span></li>
+                      <li><i class="bi bi-caret-right"></i> Introdução ao Ecossistema e Documentação PHP <span class="az-04">- 2 horas </span></li>
+                      <li><i class="bi bi-caret-right"></i> Introdução à Programação e Pensamento Computacional <span class="az-04">- 5 horas </span></li>
+                    </ul>
+                  </div>
+                  <div class="col-md-5">
+                    <ul>
+                      <li><i class="bi bi-caret-right"></i> Introdução ao PHP <span class="az-04">- 4 horas </span></li>
+                      <li><i class="bi bi-caret-right"></i> Formação Lógica de Programação <span class="az-04">- 41 horas </span></li>
+                      <li><i class="bi bi-caret-right"></i> Formação de UX Designer <span class="az-04">- 30 horas </span></li>
+                      <li><i class="bi bi-caret-right"></i> Formação HTML Web Developer <span class="az-04">- 21 horas </span></li>
+                    </ul>
+                  </div>
+                </div>
               </div>
               <div class="tab-pane fade" id="nav-origamid" role="tabpanel" aria-labelledby="nav-origamid-tab">
                 <ul>
@@ -183,6 +189,23 @@
               </div>
             </div>
           </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="contato bg-blur" id="contato">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 ps-5 pt-4">
+          <h2 class="az-02 txt-shadow">vamos nos conectar<span class="cz-03 txt-shadow">?</span></h2>
+        </div>
+        <div class="col-md-6 p-3 pt-4">
+          <form action="https://formsubmit.co/jourdanyrayssa@gmail.com" method="POST" class="conectar">
+            <input type="text" name="name" placeholder="Nome" required>
+            <input type="email" name="email" placeholder="E-mail" required>
+            <input type="text" name="mensagem" placeholder="Deixe uma mensagem!" class="mensagem" required>
+            <button type="submit" class="border-2 botao">conectar.</button>
+          </form>
         </div>
       </div>
     </div>
@@ -219,8 +242,15 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
 </body>
 <footer class="bg-dbk text-center">
-  <img src="img/logo/logo.png" alt="Logotipo do site com a letra “J” estilizada, incorporando elementos visuais que remetem à tecnologia." width="75px" class="logo-footer mt-4">
-  <h5 class="az-03 p-2">Desenvolvido por Jourdany Rayssa</h5>
+  <a href="#"><img src="img/logo/logo.png" alt="Logotipo do site com a letra “J” estilizada, incorporando elementos visuais que remetem à tecnologia." width="75px" class="logo-footer mt-3"></a>
+  <div class="d-block mb-3 mt-2">
+    <a href="https://www.linkedin.com/in/jourdanyrayssa" class="az-01 m-1"><i class="bi bi-linkedin"></i></a>
+    <a href="https://github.com/Jourdany" class="az-01 m-1"><i class="bi bi-github"></i></a>
+    <a href="https://www.instagram.com/eujourdany" class="az-01 m-1"><i class="bi bi-instagram"></i></a>
+  </div>
+  <div class="bg-b pt-2">
+    <h5 class="az-03">Desenvolvido por Jourdany Rayssa</h5>
+  </div>
 </footer>
 
 

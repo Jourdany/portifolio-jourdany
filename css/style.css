@@ -77,6 +77,9 @@ code{
 .bg-db{
   background-color: #022e52;
 }
+.bg-b{
+  background-color: #053C69;
+}
 .bg-dbk{
   background-color: #081520;
 }
@@ -93,7 +96,7 @@ code{
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  min-height: 400px;
+  min-height: auto;
   padding: 20px;
 }
 /*==========TONS DE AZUL========*/
@@ -140,28 +143,29 @@ code{
 
 /*=========MENU========*/
 a.nav-link{
-  color: #60BACB;
+  color: #60BACB!important;
 }
 a.nav-link:hover{
-  color: #16888a;
+  color: #9bf2f3!important;
+  font-weight: 800!important;
 }
 a.nav-link:active{
-  color: #81D7D9;
-  font-weight: 600;
+  color: #9bf2f3!important;
+  font-weight: 800!important;
 }
 a.nav-link:focus{
-  color: #81D7D9;
-  font-weight: 600;
+  color: #81D7D9!important;
+  font-weight: 800!important;
 }
 .bg-menu-toggle{
-  border: solid #6ab8b8 1px;
-  background-color: #326b99;
+  border: solid #6ab8b8 1px!important;
+  background-color: #326b99!important;
 }
 .navbar-toggler:hover{
-  border: solid #6ab8b8 2px;
+  border: solid #6ab8b8 2px!important;
 }
 .navbar-toggler:active{
-  border: solid #6ab8b8 2px;  
+  border: solid #6ab8b8 2px!important;  
 }
 
 /*==========SOBRE========*/
@@ -317,7 +321,6 @@ nav > div a.nav-item.nav-link.active{
   background:#081520;
   border-radius:0;
 }
-
 nav > div a.nav-item.nav-link.active:after{
   content: "";
   position: relative;
@@ -337,12 +340,37 @@ nav > div a.nav-item.nav-link.active:after{
 nav > div a.nav-item.nav-link:hover, nav > div a.nav-item.nav-link:focus{
   border: none;
   background: #60BACB;
-  color:#063E6C;
+  color:#081520!important;
   font-family: "Lato", sans-serif;
   font-weight: 600;
   font-style: italic;
   border-radius:0;
   transition:background 0.20s linear;
+}
+/*======================FORMS====================================*/
+input[type="text"], input[type="email"]{
+    border: solid #6ab8b8 3px;
+    margin: 4px;
+    border-radius: 4px;
+}
+.botao{
+    color: #6ab8b8;
+    background-color: transparent;
+    background-image: none;
+    border-color: #6ab8b8;
+    padding: 2px 35px;
+    border-radius: 4px;
+}
+.botao:hover{
+  color: #081520;
+  background-color: #6ab8b8;
+  border-radius: 4px;
+}
+[type=button]:not(:disabled), [type=reset]:not(:disabled), [type=submit]:not(:disabled), button:not(:disabled) {
+    cursor: pointer;
+}
+input.mensagem {
+    width: 250px;
 }
 /*========================RESPONSIVIDADE========================*/
 @media (max-width: 1000px){
@@ -382,5 +410,20 @@ h5.az-03 {
 .container-fluid.tecnologias {
     margin-left: 30px;
 }
-
+input.mensagem {
+    width: 191px;
+}
+button.border-2.botao {
+    width: 191px;
+    margin-left: 4px;
+    margin-top: 4px;
+}
+section#contato {
+    text-align: center;
+}
+}
+@media(max-width:470px){
+  h2.az-02.txt-shadow{
+    margin-left: -40px;
+}
 }
