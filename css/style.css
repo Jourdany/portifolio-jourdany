@@ -430,3 +430,13 @@ section#contato {
     margin-left: -40px;
 }
 }
+@media (max-width:415px){
+  h1.az-01.txt-shadow {
+    font-size: 2.125rem;
+}
+}
+@media (max-width:344px){
+  h1.az-01.txt-shadow {
+    font-size: 1.825rem;
+}
+}
