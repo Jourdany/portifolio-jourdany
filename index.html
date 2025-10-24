@@ -46,7 +46,7 @@
       </div>
     </nav>
   </header>
-  <section id="sobre" class="bg-blur container-fluid p-5" style="margin-top: 95px;">
+  <section id="sobre" class="bg-blur container-fluid p-5">
     <div class="sobre row col-md-12 p-2 mt-4">
       <div class="perfil col-md-5 p-2  text-center">
         <img src="img/perfil/perfil-foto.jpeg" alt="Retrato de perfil da desenvolvedora sorrindo, usando óculos e uma blusa preta." width="365px" class="foto">
@@ -210,7 +210,33 @@
       </div>
     </div>
   </section>
-
+  <!-- VLIBRAS-->
+  <div vw="" class="enabled" style="left: initial; right: 0px; top: 50%; bottom: initial; transform: translateY(calc(-50% - 10px));">
+    <div vw-access-button="" class="active" style=""><img class="vp-access-button" data-src="assets/access_icon.svg" alt="Conteúdo acessível em Libras usando o VLibras Widget com opções dos Avatares Ícaro, Hosana ou Guga." src="https://vlibras.gov.br/app//assets/access_icon.svg">
+      <img class="vp-pop-up" data-src="assets/access_popup.jpg" alt="Conteúdo acessível em Libras usando o VLibras Widget com opções dos Avatares Ícaro, Hosana ou Guga." src="https://vlibras.gov.br/app//assets/access_popup.jpg">
+    </div>
+    <div vw-plugin-wrapper="">
+      <div vp="">
+        <div vp-box=""></div>
+        <div vp-message-box=""></div>
+        <div vp-settings=""></div>
+        <div vp-dictionary=""></div>
+        <div vp-settings-btn=""></div>
+        <div vp-info-screen=""></div>
+        <div vp-suggestion-screen=""></div>
+        <div vp-translator-screen=""></div>
+        <div vp-more-options-screen=""></div>
+        <div vp-emotions-tooltip=""></div>
+        <div vp-main-guide-screen=""></div>
+        <div vp-suggestion-button=""></div>
+        <div vp-rate-box=""></div>
+        <div vp-change-avatar=""></div>
+        <div vp-aux-controls=""></div>
+        <div vp-controls=""></div>
+        <span vp-click-blocker=""></span>
+      </div>
+    </div>
+  </div>
 
   <script>
     /*=====================CAROUSEL DE ÍCONES===================*/
@@ -236,6 +262,10 @@
         }]
       });
     });    
+  </script>
+  <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+  <script>
+    new window.VLibras.Widget('https://vlibras.gov.br/app');
   </script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
   <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>

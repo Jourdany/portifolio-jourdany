@@ -176,6 +176,9 @@ img.foto {
 a.az-01.m-1 {
     font-size: 32px;
 }
+#sobre{
+  margin-top: 95px;
+}
 /*==========ITENS========*/
 .drop::before {
   content: ""; /* Essencial para que o pseudo-elemento exista */
@@ -205,7 +208,7 @@ a.az-01.m-1 {
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
-            user-select: none;
+        user-select: none;
     -webkit-touch-callout: none;
     -khtml-user-select: none;
     -ms-touch-action: pan-y;
